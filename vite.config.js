@@ -1,6 +1,6 @@
-import { defineconfig } from "vite";
+import { defineConfig } from "vite";
 
-export default defineconfig(({ mode }) => ({
+export default defineConfig(({ mode }) => ({
   base: mode === "production" ? "/clock-clock/" : "/", // base becomes .com/my-site/ during prod
   build: {                        // ^^ the .com/xyz/ wala part during production
     rollupoptions: {
