@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/clock-clock/" : "/", // base becomes .com/my-site/ during prod
+  base: mode === "production" ? "/" : "/", // base becomes .com/my-site/ during prod
   build: {                        // ^^ the .com/xyz/ wala part during production
     rollupoptions: {
       input: { // all the html input files.
